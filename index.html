@@ -214,9 +214,128 @@
             <img class="about__photo" src="./images/ProfilePic.jpeg" alt="Que tio más guapo" />
           </div>
         </div>
+        
+      </div>
+
+
+      <div class="row">
+        <br>
+        <h2>Habilidades</h2>
+        <div class="about__content">
+          <div class="about__text">
+
+
+            <p>
+              Actualmente, sigo desarrollando mi formación en mi tiempo libre, aprendiendo más sobre paradigmas de programación y otros motores de videojuegos como Godot y Unreal.
+              <br><br>En el caso de <b>Godot</b> creo firmemente que va a convertirse en un <b>titán</b> de la industria del videojuego, al igual que ha pasado con Blender en la industria del 3D.
+            </p>
+            
+
+          </div>
+
+          <div class="about__photo-container">
+
+            <script type="text/javascript">
+              window.onload = function () {
+
+                CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+
+                "#8f97a6",
+                "#03a9fc",
+                "#b8ad18",
+                "#412ac7"              
+                ]);
+
+
+                var chart = new CanvasJS.Chart("chartContainer",
+                {
+
+                  axisY:{
+                includeZero: false,        
+                viewportMinimum: 0,
+                viewportMaximum: 10
+                         },
+
+                  colorSet: "greenShades",
+                  theme: "dark2",
+                  backgroundColor: "#000000",
+                  title:{
+                    text: "Familiaridad con motores",
+                    fontFamily: "tahoma",
+                    fontColor: "White",
+                  },
+                  data: [
+                  {
+                    click: onClick,
+                    fillOpacity: .7,
+                    dataPoints: [
+                    { y: 10, label: "Unity C#"},
+                    { y: 4, label: "Godot GDscript"},
+                    { y: 4, label: "Unreal Engine Blueprints"},
+                    { y: 2, label: "Construct 3 JavaScript"}
+                    ]
+                  }
+                  ]
+                });
+            
+            chart.render();
+
+            function onClick(e) {
+              switch (e.dataPoint.x) {
+                case 0:
+                  window.open("https://unity.com/es", '_blank').focus();
+                  break;
+                case 1:
+                  window.open("https://godotengine.org/", '_blank').focus();
+                  break;
+                case 2:
+                  window.open("https://www.unrealengine.com/es-ES/unreal-engine-5", '_blank').focus();
+                  break;
+                case 3:
+                  window.open("https://www.construct.net/en", '_blank').focus();
+                  break;
+                  default:
+                    alert("Click en la grafica indefinido");
+              }
+	          }
+
+
+            }
+            </script>
+            <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+            <div id="chartContainer" style="height: 300px; width: 100%;">
+            </div>
+
+
+
+          </div>
+        </div>
+        
       </div>
     </section>
+
+
+
+
+    
   </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
   <section class="contact" id="contact">
