@@ -92,19 +92,105 @@
               <p><strong>Idiomas: </strong> <span>Castellano (Nativo), Inglés (B2)</span></p>
             </div>
 
-            <div class="mt-4">
-              <h5>Software y Herramientas</h5>
-              <div class="d-flex flex-wrap gap-2 mt-3">
-                <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Unity</span>
-                <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Unreal Engine</span>
-                <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Godot</span>
-                <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Visual Studio</span>
-                <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Git/GitHub</span>
-                <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Blender</span>
-                <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Aseprite</span>
-              </div>
-            </div>
+        
 
+<div class="mt-4">
+  <h5>Tecnologías y Herramientas</h5>
+  
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs mt-3" id="techTabs" role="tablist" style="border-bottom: none;">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="languages-tab" data-bs-toggle="tab" data-bs-target="#languages" type="button" 
+              style="color: #ff0000; background: transparent; border: 2px solid #ff0000; border-radius: 8px; padding: 8px 16px; font-weight: 600;"
+              onmouseover="if(!this.classList.contains('active')) this.style.borderColor='rgba(255, 0, 0, 0.3)'" 
+              onmouseout="if(!this.classList.contains('active')) this.style.borderColor='transparent'"
+              onclick="document.querySelectorAll('#techTabs .nav-link').forEach(btn => {btn.style.color='#868686'; btn.style.border='2px solid transparent'; btn.style.fontWeight='normal';}); this.style.color='#ff0000'; this.style.border='2px solid #ff0000'; this.style.fontWeight='600';">
+        Lenguajes
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="engines-tab" data-bs-toggle="tab" data-bs-target="#engines" type="button"
+              style="color: #868686; background: transparent; border: 2px solid transparent; border-radius: 8px; padding: 8px 16px;"
+              onmouseover="if(!this.classList.contains('active')) this.style.borderColor='rgba(255, 0, 0, 0.3)'" 
+              onmouseout="if(!this.classList.contains('active')) this.style.borderColor='transparent'"
+              onclick="document.querySelectorAll('#techTabs .nav-link').forEach(btn => {btn.style.color='#868686'; btn.style.border='2px solid transparent'; btn.style.fontWeight='normal';}); this.style.color='#ff0000'; this.style.border='2px solid #ff0000'; this.style.fontWeight='600';">
+        Motores
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools" type="button"
+              style="color: #868686; background: transparent; border: 2px solid transparent; border-radius: 8px; padding: 8px 16px;"
+              onmouseover="if(!this.classList.contains('active')) this.style.borderColor='rgba(255, 0, 0, 0.3)'" 
+              onmouseout="if(!this.classList.contains('active')) this.style.borderColor='transparent'"
+              onclick="document.querySelectorAll('#techTabs .nav-link').forEach(btn => {btn.style.color='#868686'; btn.style.border='2px solid transparent'; btn.style.fontWeight='normal';}); this.style.color='#ff0000'; this.style.border='2px solid #ff0000'; this.style.fontWeight='600';">
+        Herramientas
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="specialty-tab" data-bs-toggle="tab" data-bs-target="#specialty" type="button"
+              style="color: #868686; background: transparent; border: 2px solid transparent; border-radius: 8px; padding: 8px 16px;"
+              onmouseover="if(!this.classList.contains('active')) this.style.borderColor='rgba(255, 0, 0, 0.3)'" 
+              onmouseout="if(!this.classList.contains('active')) this.style.borderColor='transparent'"
+              onclick="document.querySelectorAll('#techTabs .nav-link').forEach(btn => {btn.style.color='#868686'; btn.style.border='2px solid transparent'; btn.style.fontWeight='normal';}); this.style.color='#ff0000'; this.style.border='2px solid #ff0000'; this.style.fontWeight='600';">
+        Unity
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content mt-3" id="techTabsContent">
+    <!-- Lenguajes -->
+    <div class="tab-pane fade show active" id="languages" role="tabpanel">
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">C#</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">C++</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Python</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">JavaScript</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Java</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">PHP</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">HTML</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">CSS</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">SQL</span>
+      </div>
+    </div>
+
+    <!-- Motores -->
+    <div class="tab-pane fade" id="engines" role="tabpanel">
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Unity</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Unreal Engine</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Godot</span>
+      </div>
+    </div>
+
+    <!-- Herramientas -->
+    <div class="tab-pane fade" id="tools" role="tabpanel">
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Git</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">GitHub</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Visual Studio</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Rider</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">FMOD</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Blender</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Aseprite</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Photoshop</span>
+      </div>
+    </div>
+
+    <!-- Especialidades -->
+    <div class="tab-pane fade" id="specialty" role="tabpanel">
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Programación de Gameplay (C#)</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Prototipado Rápido de Mecánicas</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Unity Netcode for GameObjects</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Profiling de Rendimiento</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Sistemas Multijugador</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">Herramientas para el Editor de Unity</span>
+        <span class="badge" style="background-color: #ff0000; color: white; font-size: 0.9rem; padding: 8px 12px;">ScriptableObjects</span>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
 
           <div class="col-md-7">
@@ -403,7 +489,7 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top"  class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
